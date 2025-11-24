@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Link from 'next/link';
-import { RiFacebookCircleFill, RiTwitterXLine, RiLinkedinFill, RiGithubLine, RiCircleFill, RiDownloadLine } from '@remixicon/react'
+import { RiFacebookCircleFill, RiTwitterXLine, RiLinkedinFill, RiGithubLine, RiDownloadLine } from '@remixicon/react'
 import PartnersMarquee from './partnersMarquee';
 import SlideUp from '@/utlits/animations/slideUp';
 
@@ -10,13 +10,13 @@ const Hero = () => {
         <section id="about" className="about-area">
             <div className="container">
                 <div className="row">
-                    {/* <!-- START ABOUT IMAGE DESIGN AREA --> */}
+                    {/* LEFT IMAGE + BASIC INFO */}
                     <div className="col-lg-4">
                         <SlideUp>
                             <div className="about-image-part">
-                                <img src={"/images/about/profile.png"} alt="About Me" />
-                                <h2>Bentos Walker</h2>
-                                <p>I am a Web Designer based in san francisco.</p>
+                                <img src="/images/about/aakash-sharma-main-image.png" alt="Aakash Sharma" />
+                                <h2>Aakash Sharma</h2>
+                                <p>Web Developer • UI/UX Enthusiast <br /> React & Laravel Developer</p>
                                 <div className="about-social text-center">
                                     <ul>
                                         <li><Link href=""><RiFacebookCircleFill size={20} /></Link></li>
@@ -28,34 +28,30 @@ const Hero = () => {
                             </div>
                         </SlideUp>
                     </div>
-                    {/* <!-- / END ABOUT IMAGE DESIGN AREA -->
-                    <!-- START ABOUT TEXT DESIGN AREA --> */}
+
+                    {/* RIGHT CONTENT */}
                     <div className="col-lg-8">
                         <SlideUp>
                             <div className="about-content-part">
-                                <p>Hello There!</p>
+                                <p>Hello There! 👋</p>
                                 <h2>
-                                    I’m Bentos Walker, a product designer crafting user-centric design with pixel-perfect precision.
+                                    I’m <strong className="hero-name">Aakash Sharma</strong> — crafting intuitive, high-performance web experiences with clean code and thoughtful design.
                                 </h2>
-                                <div className="adress-field">
-                                    <ul>
-                                        <li className='d-flex align-items-center'><i><RiCircleFill size={14} /></i> Available for Freelancing</li>
-                                    </ul>
-                                </div>
+
                                 <div className="hero-btns">
-                                    <Link href="/contact" className="theme-btn">Download CV <i><RiDownloadLine size={16} /></i> </Link>
+                                    <Link href="/contact" className="theme-btn">Download CV <RiDownloadLine size={16} /></Link>
                                 </div>
                             </div>
                         </SlideUp>
+
                         <SlideUp>
                             <PartnersMarquee />
                         </SlideUp>
                     </div>
-                    {/* <!-- / END ABOUT TEXT DESIGN AREA --> */}
                 </div>
             </div>
         </section>
     )
 }
 
-export default Hero
+export default Hero;

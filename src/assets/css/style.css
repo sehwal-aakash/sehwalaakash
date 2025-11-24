@@ -624,6 +624,10 @@ html {
     color: var(--primary-color);
 }
 
+.hero-name{
+    color: var(--primary-color);
+}
+
 
 .pagination {
     -webkit-box-align: center;
